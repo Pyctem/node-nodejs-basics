@@ -1,5 +1,5 @@
-import { createGunzip } from 'node:zlib';
-import { createReadStream, createWriteStream } from 'node:fs'
+import {createGunzip} from 'node:zlib';
+import {createReadStream, createWriteStream} from 'node:fs'
 
 const decompress = async () => {
     createReadStream('./src/zip/files/archive.gz')

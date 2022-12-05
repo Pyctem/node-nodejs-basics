@@ -1,9 +1,10 @@
-import { readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'url';
-import path from 'path';
-import { release, version } from 'os';
-import { createServer as createServerHttp } from 'http';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {release, version} from 'node:os';
+import {createServer as createServerHttp} from 'node:http';
 import './files/c.js';
+
 const a = JSON.parse(
     await readFile('./src/modules/files/a.json')
 );
@@ -42,5 +43,5 @@ myServer.listen(PORT, () => {
 });
 
 
-export { unknownObject, myServer }
+export {unknownObject, myServer}
 

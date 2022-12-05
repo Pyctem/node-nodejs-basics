@@ -1,7 +1,6 @@
-import { createGzip } from 'node:zlib';
-import { createReadStream, createWriteStream } from 'node:fs';
-import { pipeline } from 'node:stream';
-
+import {createGzip} from 'node:zlib';
+import {createReadStream, createWriteStream} from 'node:fs';
+import {pipeline} from 'node:stream';
 
 const compress = async () => {
     const gzip = createGzip();

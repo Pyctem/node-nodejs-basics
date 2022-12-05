@@ -1,4 +1,4 @@
-import { stdin, stdout } from 'node:process'
+import {stdin, stdout} from 'node:process'
 
 const transform = async () => {
     stdin.on('data', (chunk) => {
